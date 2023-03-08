@@ -52,5 +52,6 @@ server/!.vscode/tasks.json
 server/!.vscode/launch.json
 server/!.vscode/extensions.json
 
+server/spark/
 server/spark/*
 server/!spark/*.jar
