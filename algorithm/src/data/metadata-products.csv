@@ -1,0 +1,4 @@
+Name,CategoryType,Aggregation
+Category,Categorical,
+Year,Temporal,
+Sales,Numerical,SUM

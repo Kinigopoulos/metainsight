@@ -1,0 +1,5 @@
+Name,CategoryType
+COMPANY,Categorical
+YEAR,Temporal
+MONTH,Temporal
+SALES,Numerical

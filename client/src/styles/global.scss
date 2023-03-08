@@ -1,0 +1,71 @@
+@use "variables";
+
+// @tailwind base;
+// @tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: variables.$background1;
+  color: variables.$color1;
+}
+
+.hover-cursor-pointer {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+.hover-cursor-pointer2 {
+  @extend .hover-cursor-pointer;
+  &:hover {
+    color: variables.$color2;
+  }
+}
+
+.default-radius {
+  border-radius: 0.5rem;
+}
+
+.fade-in {
+  //opacity: 0;
+  animation: enter 500ms ease-in forwards;
+  @keyframes enter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.header {
+  background-color: variables.$background2;
+  border-radius: 0.5rem;
+}
+.headerText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
